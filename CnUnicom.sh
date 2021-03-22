@@ -209,6 +209,11 @@ function jfdouble() {
     ##签到视频翻倍赠送积分
     echo
     curl -X POST -sA "$UA" -b $workdir/cookie.SigninActivity -e "$Referer" "https://act.10010.com/SigninApp/signin/bannerAdPlayingLogo"
+    echo "1G流量获取"
+    curl -X POST -sA "$UA" -b $workdir/cookie.SigninActivity -e "$Referer" "https://act.10010.com/SigninApp/doTask/finishVideo"
+    curl -X POST -sA "$UA" -b $workdir/cookie.SigninActivity -e "$Referer" "https://act.10010.com/SigninApp/doTask/getTaskInfo"
+    curl -X POST -sA "$UA" -b $workdir/cookie.SigninActivity -e "$Referer" "https://act.10010.com/SigninApp/doTask/getPrize"
+
 }
 
 function main() {
